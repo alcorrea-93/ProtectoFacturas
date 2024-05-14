@@ -1,0 +1,268 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.cabecera {
+    background-color: rgb(197, 223, 247);
+    height: 10vh;
+    min-height: 70px;
+    padding-left: 170vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+
+}
+
+.cabecera button {
+    width: 100%;
+    height: 80%;
+    margin: 0 2px;
+    border: 0;
+    background-color: rgb(178, 210, 240);
+    font-size: 1.2em;
+   
+}
+
+.cabecera button:hover {
+    background-color: rgb(221, 234, 247);
+}
+
+.cabecera button:active {
+    background-color: rgb(125, 156, 187);
+    color: white;
+}
+
+nav {
+    background-color: rgb(197, 223, 247, .8);
+    width: 37vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.lateral button {
+    width: 22rem;
+    height: 80%;
+    margin: 2px 2px;
+    border: 0;
+    background-color: rgb(178, 210, 240);
+    font-size: 1.2em;
+   
+}
+
+.lateralBoton{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+nav h3 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+nav h4 {
+    font-size: 17px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(178, 210, 240);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgb(221, 234, 247);
+
+}
+
+nav a:active {
+    background-color: rgb(125, 156, 187);
+    color: white;
+
+}
+
+.contenido {
+    margin-left: 37vh;
+    padding: 20px;
+    flex: 1;
+    position: relative;
+    border-style: outset;
+}
+.inicio img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+.inicio h1{
+    font-size: 30px;
+    text-align: center;
+}
+.ayuda h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.ayuda h2 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.ayuda p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.contactos h1{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contacto {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 320px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px; 
+}
+
+.contacto img {
+    margin-right: 10px;
+    border-right: 1px solid black;
+    padding-right: 10px; 
+    width: 40px;
+    height: 40px;
+}
+
+.contacto span {
+    flex: 1;
+}
+.configuraciones h1{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.configuraciones {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+
+.entrada {
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px); 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.configuraciones button {
+    width: calc(40% - 22px);
+    padding: 10px 0;
+    background-color:  rgb(95, 120, 146); 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rgb(161, 185, 211);
+}
+
+.facturas h1{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.factura {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 1px solid #ccc; /* Borde del div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efecto de relieve */
+    padding: 20px; /* Espaciado interno */
+}
+
+
+.acciones {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Borde inferior para la separación */
+    padding-bottom: 10px; /* Espaciado inferior para los botones */
+    
+}
+
+
+.acciones button {
+    background-color:  rgb(95, 120, 146);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabla {
+    flex: 1;
+    overflow: auto;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ccc; /* Borde superior para la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color:  rgb(95, 120, 146);
+    color: white;
+}
