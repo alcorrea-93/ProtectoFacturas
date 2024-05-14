@@ -9,7 +9,7 @@ import Contactos from './Contactos';
 import Configuraciones from './Configuraciones';
 import Facturas from './Facturas';
 
- 
+ //
 
 function App() {
   const [section, setSection] = useState('Inicio');
